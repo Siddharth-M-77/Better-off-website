@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: "Gilroy";
+
+}
+
+main {
+    min-height: 100vh;
+    background-color: #E5E7DF;
+    color: black;
+    padding: 0 3vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+main>nav {
+    z-index: 999;
+    width: 100%;
+    background-color: red;
+    padding: 2vw 0vw;
+    background-color: #E5E7DF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & a {
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+        font-size: 1.8vw;
+    }
+
+    & .heading {
+        font-weight: 900;
+
+
+    }
+
+    & .links {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        gap: 2vw;
+
+        & a {
+            font-size: 1.5vw;
+        }
+    }
+}
+
+#content {
+    margin-top: 4vw;
+    width: 100vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & .left {
+        width: 40%;
+        padding: 2vw;
+        display: flex;
+        flex-direction: column;
+        gap: 1vw;
+
+        & button {
+            border: none;
+            display: flex;
+            border-bottom: 1px solid black;
+            font-size: 1.5vw;
+            width: fit-content;
+            gap: 2vw;
+
+            background-color: #E5E7DF;
+
+        }
+
+        & p {
+            width: 60%;
+            font-size: 1.4vw;
+        }
+
+    }
+
+    & .right {
+        width: 60%;
+        padding: 2vw;
+
+        & p {
+            width: 100%;
+            /* background-color: red; */
+            font-size: 3vw;
+        }
+    }
+
+
+}
+
+main .bottom {
+    width: 100vw;
+    overflow: hidden;
+    white-space: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.anime {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 5vw; */
+    animation: scroll 14s linear infinite;
+    -webkit-animation: scroll 15s linear infinite;
+    & img{
+        width: 16vw;
+        aspect-ratio: 1;
+    }
+    
+}
+
+
+.anime h1 {
+    font-size: 20vw;
+
+}
+
+
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        -o-transform: translateX(0%);
+}
+
+    100% {
+        transform: translateX(-100%);
+        /* Move off-screen to the left */
+    }
+}
