@@ -14,6 +14,7 @@ body {
 
 main {
     min-height: 100vh;
+    width: 100%;
     background-color: #E5E7DF;
     color: black;
     padding: 0 3vw;
@@ -124,18 +125,101 @@ main .bottom {
     /* gap: 5vw; */
     animation: scroll 14s linear infinite;
     -webkit-animation: scroll 15s linear infinite;
-    & img{
+
+    & img {
         width: 16vw;
         aspect-ratio: 1;
     }
-    
+
 }
 
 
 .anime h1 {
     font-size: 20vw;
 
+
 }
+.page2 {
+    width: 100%;
+    height: 70vh;
+}
+
+.page2 .headings{
+    margin: 5vw 0;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap:2vw
+}
+main .page2 .line{
+border-bottom: 1px solid rgba(0, 0, 0, 0.271);
+margin-bottom: 5vh;
+}
+
+.page2-content{
+    height: 100vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+
+
+    
+}
+.page2-content .left{
+    height: 100%;
+    width: 30%;
+    background-color: rgb(76, 0, 255);
+}
+.page2-content .center{
+    height: 100%;
+    width: 30%;
+    background-color: blue;
+}
+.page2-content .right{
+    height: 100%;
+    width: 30%;
+    background-color: rgb(114, 84, 125);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -146,7 +230,7 @@ main .bottom {
         -moz-transform: translateX(0%);
         -ms-transform: translateX(0%);
         -o-transform: translateX(0%);
-}
+    }
 
     100% {
         transform: translateX(-100%);
