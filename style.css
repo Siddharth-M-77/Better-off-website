@@ -46,6 +46,9 @@ main>nav {
         font-weight: 500;
         font-size: 1.8vw;
     }
+    & i{
+        display: none;
+    }
 
     & .heading {
         font-weight: 900;
@@ -118,6 +121,7 @@ main .bottom {
     width: 100vw;
     overflow: hidden;
     white-space: wrap;
+    margin-top: 10rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -174,9 +178,7 @@ main .page2 .line {
     height: 100vh;
     width: 100%;
     margin-top: 5%;
-    /* background-color: red; */
     padding: 0 3vw;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -311,7 +313,7 @@ main .page2 .line {
     gap: 10px;
 
     & h1 {
-        font-size: 20vw;
+        font-size: 18vw;
         text-transform: uppercase;
         font-family: sans-serif;
         line-height: 1;
