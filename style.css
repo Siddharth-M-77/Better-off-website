@@ -45,7 +45,23 @@ main>nav {
         color: black;
         font-weight: 500;
         font-size: 1.8vw;
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            height: 2px;
+            width: 0%;
+            background-color: black;
+            bottom: 0;
+            left: 0;
+            transition: all 0.25s;
+
+        }
+        &:hover::before{
+            width: 100%;
+        }
     }
+
     & i{
         display: none;
     }
